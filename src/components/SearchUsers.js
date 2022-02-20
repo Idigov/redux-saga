@@ -34,7 +34,7 @@ const SearchUsers = ({ setValue, setCheck, value }) => {
           onChange={handleChangeInput}
           value={value}
         />
-        {value ? <Button onClick={handleRemoveValue}>Сбросить</Button> : null}
+        {value && <Button onClick={handleRemoveValue}>Сбросить</Button>}
       </Paper>
     </>
   );
